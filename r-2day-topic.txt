@@ -1,0 +1,108 @@
+R 2일차
+
+0. Open
+1. Review
+2. Topic
+   2.1 빅데이터 이해
+   2.2 R Studio 이해
+   2.3 자료형 & 변수
+   2.4 벡터 이해
+3. Q & A
+4. Next
+5. Close
+
+
+1. Review
+  
+   Git 사용 방법
+ 
+   - Local에서 사용
+   1. git 초기화( init ) 
+      git init
+   
+     최초 한번 등록
+	 git config --global user.email "사용자 이메일"
+	 git config --global user.name "사용자 ID"
+	 
+   2. git으로 관리할 대상 추가( add ) 
+      git add <파일명> 
+   
+   3. 관리 대상 확정( commit ) 
+      git commit -m "설명"
+
+   4. log 정보 확인
+      git log
+	 
+   5. git 상태 확인
+      git status
+
+   6. commit 되돌리기
+      git checkout <commit 번호 7자리이상>
+	  
+
+	  git checkout - : 최신 commit으로 되돌리기
+   
+   - Remote( github ) 와 연계
+   1. github( remote )와 연결 - 처음 연결시 적용
+      git remote add origin <github 주소>
+	  
+   2. github( remote )에 올리기( push )
+      git push origin master
+	  
+   3. github( remote ) 내용 Local로 가져오기 - 처음으로 remote에서 local로 연결시만 적용
+      git clone <github 주소>
+	  
+   4. github( remote ) 내용으로 Local 내용 갱신
+      git pull origin master
+	  
+2. Topic
+
+  2.1 빅데이터 이해
+  
+	  빅데이터 특징 ( 3V )
+	  
+	  - 데이터양( Volume ) : 통상적으로 사용되는 데이터 수집, 관리 및 처리 s/w의 수용 한계를 넘어서는 크기
+	  - 데이터 다양성( Variety ) : 다양한 형태의 데이터
+	    1. 정형 데이터( structured data ) : 일정한 형식을 갖추고 있는 데이터
+		2. 반정형 데이터( semi-structured data ) : 일정한 구조는 없으나 구조를 파악할 수 있는 데이터
+		3. 비정형 데이터( unstructured data ) : 일정한 형식이나 구조가 없는 데이터양
+	  - 데이터 처리속도( velocity ) : 빠른 데이터 증가 속도와 사용속도
+
+      - 데이터 가치( Value )
+	  - 데이터 정확성( Veracity )
+
+  2.2 빅데이터 분석 과정
+
+      1. 문제 정의 및 계획 
+		 : 문제에 대한 명확한 정의
+      
+	  2. 데이터 수집
+      
+	  3. 데이터 정제 및 전처리 
+      
+	  4. 데이터 탐색( EDA, Exploratory Data Analysis 탐색적 데이터 분석 )
+         : 데이터 자체를 이해하고 파악하는 과정
+		 : 구체적 분석 전략을 설계하는데 중요하게 활용
+	  
+	  5. 데이터 분석( 모델 )
+	     : 구체적인 분석 단계로 여러 통계 분석 및 기타 분석 기법과 ML / DL이 적용 되는 단계
+      
+	  6. 결과 보고( 발표 )
+
+   2.2 CLI( Command Line Interface ) : 명령 입력 방식
+       1. windows의 cmd 프로그램 실행
+       2. 명령
+         2.1 dir( directory ) : 현재 디렉터리 목록( 자세히 )
+         2.2 dir /w : 현재 디렉터리 목록( 간략히 )
+         2.3 cd( change directory ) : 디렉터리 이동
+         2.4 cls( clear screen ) : 화면 지우기
+
+   2.3 R 프로그래밍 - 자료형 & 변수
+
+      # : 주석( comment ), 프로그램 실행과는 무관한 설명
+      함수( Function ) : 단위 기능을 수행하는 코드 집합
+      함수 형식 : 함수명( 인수 목록 )
+                  예) class( 5 )
+                      print( 3 + 5 )
+
+       
