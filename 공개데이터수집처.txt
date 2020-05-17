@@ -1,0 +1,14 @@
+공개 데이터 수집
+
+https://www.data.go.kr/																공공데이터포털
+http://data.seoul.go.kr/															서울 열린데이터 광장
+https://www.koweps.re.kr:442/main.do;jsessionid=2EF603B9091380BB90DD8DF2DEA0456E 	한국복지패널
+http://kosis.kr/index/index.do														국가통계포털
+http://kostat.go.kr/portal/korea/index.action										통계청
+https://www.weather.go.kr/weather/main.jsp											기상청 날씨누리
+https://www.jejudatahub.net/main													제주 데이터허브
+
+
+https://www.bigdatahub.co.kr/index.do												SK 데이터허브
+https://datalab.naver.com/															네이버 데이터랩
+https://trends.google.co.kr/trends/?geo=KR											구글 트렌드
