@@ -53,7 +53,7 @@ head( mtcars )
 cor( mtcars )
 cor( mtcars )[ 1, ]
 
-# disp와의 상관계수가 -0.8475514로 가장 상관성이 높다.  
+# wt와의 상관계수가 -0.8676594로 가장 상관성이 높다.  
 
 #문4)
 #다음은 2015년부터 2026년도까지의 예상 인구수 추계자료이다. 연도를 x
@@ -112,9 +112,9 @@ for ( i in 1:nrow( df ) ) {
     month[ i ] <- 9
   } else if ( df[ i, "월" ] == "10월" ) {
     month[ i ] <- 10
-  } else if ( df[ i, "월" ] == "11월" ) {
+  }else if ( df[ i, "월" ] == "11월" ) {
     month[ i ] <- 11
-  } else if ( df[ i, "월" ] == "12월" ) {
+  }else if ( df[ i, "월" ] == "12월" ) {
     month[ i ] <- 12
   }  
 }
@@ -326,7 +326,7 @@ cat( "서울 사고 발생 최고 계절 : ", max.season.name, " [ ", max.season
 
 par( mfrow = c( 4, 1 ) )
 
-plot( local.gu.length,
+plot( local.gu.index,
       seoul.3,                  
       main = "서울시 봄 사고건수",
       type = "b",              
@@ -336,10 +336,10 @@ plot( local.gu.length,
       ylim = c( 50, 350 ),
       xlab = "구",          
       ylab = "발생건수" )       
-lines( local.gu.length, seoul.4, type = "b", col = "blue" )
-lines( local.gu.length, seoul.5, type = "b", col = "black" )
+lines( local.gu.index, seoul.4, type = "b", col = "blue" )
+lines( local.gu.index, seoul.5, type = "b", col = "black" )
 
-plot( local.gu.length,
+plot( local.gu.index,
       seoul.6,                  
       main = "서울시 여름 사고건수",
       type = "b",              
@@ -349,10 +349,10 @@ plot( local.gu.length,
       ylim = c( 50, 350 ),
       xlab = "구",          
       ylab = "발생건수" )       
-lines( local.gu.length, seoul.7, type = "b", col = "blue" )
-lines( local.gu.length, seoul.8, type = "b", col = "black" )
+lines( local.gu.index, seoul.7, type = "b", col = "blue" )
+lines( local.gu.index, seoul.8, type = "b", col = "black" )
 
-plot( local.gu.length,
+plot( local.gu.index,
       seoul.9,                  
       main = "서울시 가을 사고건수",
       type = "b",              
@@ -362,10 +362,10 @@ plot( local.gu.length,
       ylim = c( 50, 350 ),
       xlab = "구",          
       ylab = "발생건수" )       
-lines( local.gu.length, seoul.10, type = "b", col = "blue" )
-lines( local.gu.length, seoul.11, type = "b", col = "black" )
+lines( local.gu.index, seoul.10, type = "b", col = "blue" )
+lines( local.gu.index, seoul.11, type = "b", col = "black" )
 
-plot( local.gu.length,
+plot( local.gu.index,
       seoul.12,                  
       main = "서울시 겨울 사고건수",
       type = "b",              
@@ -375,7 +375,7 @@ plot( local.gu.length,
       ylim = c( 50, 350 ),
       xlab = "구",          
       ylab = "발생건수" )       
-lines( local.gu.length, seoul.1, type = "b", col = "blue" )
-lines( local.gu.length, seoul.2, type = "b", col = "black" )
+lines( local.gu.index, seoul.1, type = "b", col = "blue" )
+lines( local.gu.index, seoul.2, type = "b", col = "black" )
 
 par( mfrow = c( 1, 1 ) )
