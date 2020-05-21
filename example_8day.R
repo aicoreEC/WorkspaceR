@@ -16,7 +16,7 @@
 
 
 #
-# 2.1 dplyr패키지
+# 2.1 dplyr패키지( https://dplyr.tidyverse.org/ )
 #
 # dplyr 패키지는 데이터 전처리 작업에 가장 많이 사용되는 패키지
 #
