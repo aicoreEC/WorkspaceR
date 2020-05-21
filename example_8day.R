@@ -16,7 +16,9 @@
 
 
 #
-# 2.1 dplyr패키지( https://dplyr.tidyverse.org/ )
+# 2.1 dplyr패키지
+# ( https://dplyr.tidyverse.org/ )
+# ( https://www.tidyverse.org/packages/ )
 #
 # dplyr 패키지는 데이터 전처리 작업에 가장 많이 사용되는 패키지
 #
@@ -91,6 +93,7 @@ exam %>% arrange( korean )
 exam %>% arrange( desc( korean ) )
 
 exam %>% arrange( class, desc( korean ) )
+
 
 mtcars %>% 
   filter( mpg, cyl ) %>% 
@@ -259,11 +262,26 @@ ggplot( df, aes( x = year, y = cnt ) ) +
 install.packages( "corrplot" )
 
 library(corrplot)
-
+
 m <- cor(mtcars)
 m
 
 corrplot( m, method="number" )
+
+
+
+
+https://www.tidyverse.org/packages/
+https://dplyr.tidyverse.org/
+https://www.rdocumentation.org/packages/corrplot/versions/0.2-0/topics/corrplot
+https://ggplot2.tidyverse.org/reference/geom_histogram.html
+https://blog.naver.com/easternsun/220198074750
+https://jjeongil.tistory.com/350
+http://www.cs.umd.edu/hcil/treemap/
+https://developers.google.com/chart/interactive/docs/gallery/bubblechart
+http://blog.naver.com/PostView.nhn?blogId=definitice&logNo=221421349302
+
+
 
 #
 # 지도 
