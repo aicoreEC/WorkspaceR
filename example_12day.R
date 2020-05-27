@@ -32,6 +32,8 @@
 # 보존하면서 서로 직교하는 축을 찾아 고차원의
 # 공간의 표본을 저 차원으로 변환하는 차원 축소 기법
 #
+# t-SNE(Stochastic Neighbor Embedding) : 단어 벡터와 같이 고차원 데이터를 시각화하는 데 사용하는 알고리즘
+#
 # Stochastic Neighbor Embedding(SNE)란 고차원의 원공간에 존재하는 데이터 x의 이웃 간의
 #   거리를 최대한 보존하는 저차원의 y를 학습하는 방법론
 # stochastic이란 이름이 붙은 이유는 거리 정보를 확률적으로 나타내기 때문

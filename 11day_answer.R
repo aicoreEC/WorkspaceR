@@ -3,6 +3,14 @@
 #
 # 11일차 Word Cloud 실습
 #
+library( RColorBrewer )
+
+display.brewer.all( n = 10, exact.n = FALSE )
+brewer.pal.info
+brewer.pal.info[ "Greens", ]
+
+#        색상개수  원하는 색
+brewer.pal( 9,     "Greens" )
 #문1)
 #20대 국회 개원 여·야 3당 대표 국회연설문에 대해 각각 워드클라우드를
 #작성하시오.
@@ -27,7 +35,7 @@ noun
 noun2 <- unlist(noun)
 
 # 무의미한 단어 제거
-noun2 <- noun2[ nchar(noun2) > 1 ]
+noun2 <- noun2[ nchar(noun2) > 1 ] # 문자길이
 noun2 <- gsub( "들이", "", noun2 )
 noun2 <- gsub( "10", "", noun2 )
 noun2 <- gsub( "이명", "", noun2 )
@@ -144,8 +152,10 @@ noun2 <- unlist( noun )
 
 noun2 <- noun2[ nchar( noun2 ) > 1 ]
 noun2 <- gsub( "들이", "", noun2 )
+noun2
 
 wordcount <- table( noun2 )
+wordcount[ 1 ]
 
 wordcloud( names( wordcount ),
            freq = wordcount,
