@@ -164,6 +164,7 @@ temperature_df <- data.frame( temperature = c( 65, 95, 155 ) )
 pressure_pred <- predict( pressure_model, temperature_df )
 pressure_pred
 
+
 #온도 65 : -49.591581
 #온도 95 : -4.218984
 #온도 155 : 86.526208
