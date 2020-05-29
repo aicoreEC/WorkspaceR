@@ -55,3 +55,34 @@ r <- 1:50
 r
 m <- matrix( r, nrow = 5 )
 m
+
+library( tidyverse )
+
+str( Orange )
+head( Orange )
+tail( Orange )
+
+Orange%>%
+  filter(Tree==1)%>%
+  ggplot(aes(age, circumference))+ 
+  geom_line()
+
+ggplot(Orange, aes(age, circumference, color = Tree))+
+  geom_line()
+
+ggplot(Orange, aes(age, circumference))+
+  geom_line(aes(color = Tree))
+
+r10 <- c( 10, 10, 10, 20, 20 )
+r20 <- c( 1, 2, 3, 1, 2 )
+r30 <- c( 25.2, 24.5, 30.3, 29.3, 31.9 )
+df <- data.frame( speed = r10, city = r20, range= r30 )
+df
+
+str( df )
+
+ggplot(df, aes( city, range ))+
+  geom_line()
+
+ggplot( data = df ) +
+  geom_bar( aes( x = city,  fill = city ), position = "dodge" )
