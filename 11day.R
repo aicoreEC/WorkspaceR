@@ -119,7 +119,7 @@ install.packages( "remotes" )
 remotes::install_github( "haven-jeon/KoNLP", upgrade = "never",
                         INSTALL_opts = c( "--no-multiarch" ) )
 
-devtools::install_github('haven-jeon/KoNLP')
+#devtools::install_github('haven-jeon/KoNLP')
 
 library( KoNLP ) # R 용 한글 자연어 처리 패키지
 useNIADic()      # 사용자 사전 설정
@@ -159,7 +159,7 @@ useNIADic()      # 사용자 사전 설정
 # 8. 한글 Word Cloud 표현
 #
 # R에서 한글 WordCloud를 이용하기 위해서는 Java 실행환경( JRE )피료
-Sys.setenv( JAVA_HOME = "D:\\Java\\jdk1.8.0_181" )
+Sys.setenv( JAVA_HOME = "D:\\Java\\jdk1.8.0_251" )
 
 install.packages( "wordcloud" )     # Word Cloud용 패키지
 install.packages( "wordcloud2" )    # Word Cloud용 패키지
